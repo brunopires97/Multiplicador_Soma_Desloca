@@ -1,0 +1,1 @@
+# Multiplicador_Soma_Desloca
