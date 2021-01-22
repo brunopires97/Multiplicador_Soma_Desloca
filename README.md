@@ -10,17 +10,17 @@
 
   Ao pensar no funcionamento do multiplicador, foi criada a FSM da figura abaixo:
   
-  ![FSM]()
+  ![FSM](https://github.com/brunopires97/Multiplicador_Soma_Desloca/blob/main/Images/FSM.jpg?raw=true)
   
   Além disso, foram construídos os blocos de controle e operacional, como podem ser vistos nas figuras 2 e 3:
   
-  ![Bloco Operativo]()
+  ![Bloco Operativo](https://github.com/brunopires97/Multiplicador_Soma_Desloca/blob/main/Images/Bloco%20Operativo.jpg?raw=true)
   
-  ![Bloco de Controle]()
+  ![Bloco de Controle](https://github.com/brunopires97/Multiplicador_Soma_Desloca/blob/main/Images/Bloco%20de%20Controle.jpg?raw=true)
   
   Percebe-se, a partir da figura acima, que a multiplicação possui uma configuração paralela, com três registradores, um multiplexador e um somador. Em um primeiro momento, deveriam ser armazenadas as entradas A e B em seus respectivos registradores. Após, deveria haver uma análise do dígito menos significativo do multiplicador e, caso fosse 1, o multiplicando seria somado ao produto parcial. Caso fosse 0, o valor somado ao produto parcial seria 0. Depois disso, o produto parcial seria deslocado para a direita, conforme a figura abaixo:
   
-  ![Multiplicação desloca-soma]()
+  ![Multiplicação desloca-soma](https://github.com/brunopires97/Multiplicador_Soma_Desloca/blob/main/Images/Multiplica%C3%A7%C3%A3o%20desloca-soma.jpg?raw=true)
 
 3. COMPONENTES UTILIZADOS
 
@@ -69,7 +69,7 @@ END comportamento;
    
      O full-adder (ou somador completo) é o componente que soma três entradas (A, B e Cin) e produz duas saídas (Resultado e Cout). 
      
-     ![Full-Adder]()
+     ![Full-Adder](https://github.com/brunopires97/Multiplicador_Soma_Desloca/blob/main/Images/Full-Adder.jpg?raw=true)
      
      Esse componente foi utilizado na descrição do somador. O código em VHDL pode ser visto na imagem abaixo.
 ```
@@ -227,7 +227,7 @@ END arq;
       
    Ao clicar em Netlist Viewers, depois em RTL Viewer, pôde ser observado o circuito feito a partir da descrição:
    
-   ![RTL Viewer da parte operativa]()
+   ![RTL Viewer da parte operativa](https://github.com/brunopires97/Multiplicador_Soma_Desloca/blob/main/Images/RTL%20Viewer%20da%20Parte%20Operativa.jpg?raw=true)
    
    Na figura acima, ocorre a configuração dos componentes utilizados no multiplicador.
    
@@ -349,7 +349,7 @@ END arq;
     
   Ao clicar em Netlist Viewers, depois em RTL Viewer, pôde ser observado o circuito com registrador de estados feito a partir da descrição:
   
-  ![Registrador de estados]()
+  ![Registrador de estados](https://github.com/brunopires97/Multiplicador_Soma_Desloca/blob/main/Images/Registrador%20de%20Estados.jpg?raw=true)
   
   É importante mencionar que o registrador de estados armazena as informações das operações a serem realizadas em cada estado pela parte operativa.
 
@@ -395,11 +395,11 @@ END arq;
 
   Ao clicar em Netlist Viewers, foi apresentada a imagem abaixo:
   
-  ![Parte de Controle]()
+  ![Parte de Controle](https://github.com/brunopires97/Multiplicador_Soma_Desloca/blob/main/Images/Parte%20de%20Controle.jpg?raw=true)
   
 
 5. REFERÊNCIAS
 VAHID, Frank. “Sistemas Digitais: Projeto, Otimização e HDLs”. Editora Bookman, 2008.
 TOCCI, R. J.; WIDMER, N. J.; MOSS, G. L. “Sistemas Digitais”. Editora Pearson, 2015.
 GAJSKI, D. D. “Principles of Digital Design”. Editora Prentice-Hall, 1996.
-SLIDEPLAYER. Síntese Lógica Para Componentes Programáveis - VHDL. Disponível em: https://slideplayer.com.br/slide/4917710/. Acesso em: 18 out. 2019.
+SLIDEPLAYER. Síntese Lógica Para Componentes Programáveis - VHDL. Disponível em: <https://slideplayer.com.br/slide/4917710/>. Acesso em: 18 out. 2019.
